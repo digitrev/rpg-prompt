@@ -27,7 +27,7 @@ const App: React.FC = () => {
           window.location.reload();
         }}
       >
-        Generate another?
+        Generate another
       </button>
       <p>
         Source:{' '}

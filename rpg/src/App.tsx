@@ -19,7 +19,7 @@ const App: React.FC = () => {
       <ul>
         {r4.map((toy) => (
           <li key={toy.result}>
-            <b>{toy.result}</b>: {toy.description}.
+            <b>{toy.result}</b>: {toy.description}
           </li>
         ))}
       </ul>

@@ -3,7 +3,7 @@ export interface DramatisPersonae {
   result: string;
 }
 
-export interface RulesToys {
+export interface Description {
   result: string;
   description: string;
 }

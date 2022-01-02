@@ -45,7 +45,7 @@ export const A5 = () =>
     'artists',
     'actors',
     'clowns and/or circus performers',
-    'rocks tars',
+    'rock stars',
     'stage musicians',
     'writers',
   ]);
@@ -92,12 +92,12 @@ export const A9 = () =>
 
 export const A10 = () =>
   pickFromArray([
-    'angels',
+    'angels or demons',
     'demigods',
-    'demons',
     'ghosts',
     'mermaids',
     'space aliens',
+    'tourists',
   ]);
 
 export const A11 = () =>
@@ -134,10 +134,10 @@ export const A14 = () =>
   pickFromArray([
     'cartoon characters',
     'cave persons',
+    'idle gentry',
     'nuns or monks',
     'princesses',
     'private detectives',
-    'tourists',
   ]);
 
 export const A15 = () =>
@@ -178,4 +178,94 @@ export const A18 = () =>
     'mutants',
     'werewolves',
     `anthropomorphic ${A2()}`,
+  ]);
+
+export const D1 = () =>
+  pickFromArray([
+    'action verbs',
+    'alignment',
+    'emotional stats',
+    'equipment tables',
+    'lexical traits',
+    'modular characters',
+  ]);
+
+export const D2 = () =>
+  pickFromArray([
+    'agency-based outcomes',
+    'live action elements',
+    'player skill',
+    'resource bidding',
+    'social combat',
+    'tactical play',
+  ]);
+
+export const D3 = () =>
+  pickFromArray([
+    'colour coding',
+    'destrictuble components',
+    'divination',
+    'expendable dice',
+    'no randomisers',
+    'playing cards',
+  ]);
+
+export const D4 = () =>
+  pickFromArray([
+    'downtime',
+    'enforced endgame',
+    'inheritance',
+    'minigames',
+    'one shot or episodic',
+    'semi-freeform',
+  ]);
+
+export const D5 = () =>
+  pickFromArray([
+    'GMless or rotating GM',
+    'GMPCs',
+    'multiple GMs',
+    'shared control',
+    'solo or one on one',
+    'troupe play',
+  ]);
+
+export const D6 = () =>
+  pickFromArray([
+    'classified traits',
+    'genre tropes',
+    'group worldbuilding',
+    'plot devices',
+    'retroactive continuity',
+    'spotlighting',
+  ]);
+
+export const D7 = () =>
+  pickFromArray([
+    'ablative competence',
+    'adverse advancement',
+    'codes of conduct',
+    'communication barriers',
+    'doomsday clock',
+    'loss of control',
+  ]);
+
+export const D8 = () =>
+  pickFromArray([
+    'dating sim mechanics',
+    'group playsheets',
+    'player versus player',
+    'power hierarchy',
+    "prisoner's dilemma",
+    'sharing feelings',
+  ]);
+
+export const D9 = () =>
+  pickFromArray([
+    'complex economy',
+    "devil's bargain",
+    'gift economy',
+    'loot',
+    'misfortune economy',
+    'reverse death spiral',
   ]);

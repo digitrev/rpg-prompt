@@ -1,5 +1,5 @@
 import { randInt } from '../Helpers/Functions';
-import { A, B, C, D } from './Tables';
+import { A, B, C, D, E } from './Tables';
 
 export const R1 = () => {
   const n = randInt(6);
@@ -77,7 +77,7 @@ export const R2 = () => {
     let p2 = B();
     while (p1 === p2) p2 = B();
 
-    return `The players' objective is to ${p1}. They accomplish this by attempting to ${p2}.`;
+    return `The players' objective is to ${p1}. They accomplish this by attempting to ${p2}. Or, if this makes more sense, the players' objective is to ${p2}. They accomplish this by attempting to ${p1}.`;
   } else if (n < 5) {
     const p1 = B();
     let p2 = B();
@@ -121,4 +121,28 @@ export const R4 = () => {
   while (t2.result === t1.result) t2 = D();
 
   return [t1, t2];
+};
+
+export const R5 = () => {
+  const r1 = randInt(6);
+  const m1 = E();
+  let m2 = E();
+  while (m1.result === m2.result) m2 = E();
+
+  let desc: string;
+  if (r1 < 2) {
+    desc =
+      'One of the following mileus is a consequence, reflection, or enabling factor of the other:';
+  } else if (r1 < 4) {
+    desc =
+      'The two following mileus represent two aspects of the setting that are in some way opposing, competing with, or trying to destroy each other:';
+  } else {
+    desc =
+      "One of the following mileus represents an aspecf of the setting that is initially konown to the player characters, and the other represents an aspect of the setting that's initially unkinown to the player characters and must be discovered during play:";
+  }
+
+  return {
+    desc: desc,
+    mileus: [m1, m2],
+  };
 };
